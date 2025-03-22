@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Memory Game</h1>
+      <div class="controls">
+        <select class="difficulty">
+          <option value="easy">Easy (4x4)</option>
+          <option value="medium">Medium (6x4)</option>
+          <option value="hard">Hard (6x6)</option>
+        </select>
+        <button class="restart">Restart</button>
+        <button class="reset-score">Reset High Score</button>
+      </div>
+      <div class="stats">
+        <span>Moves: <span class="moves">0</span></span>
+        <span>Time: <span class="time">0</span>s</span>
+        <span>Score: <span class="score">0</span></span>
+        <span>High Score: <span class="high-score">0</span></span>
+      </div>
+      <div class="game-board"></div>
+      <div class="win-message hidden">You Win! 🎉</div>
+    </div>
+    <audio id="flip-sound" src="https://www.soundjay.com/buttons/beep-01a.mp3"></audio>
+    <audio id="match-sound" src="https://www.soundjay.com/buttons/beep-07.mp3"></audio>
+    <audio id="win-sound" src="https://www.soundjay.com/buttons/beep-02.mp3"></audio>
+    <script src="index.js"></script>
+  </body>
+</html>
